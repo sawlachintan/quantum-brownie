@@ -10,27 +10,27 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import "./App.css";
-import { NUMBERS, INGREDIENTS, getRandomInt } from "./assets/constants";
+import { NUMBERS, INGREDIENTS, getRandomInt, MAX } from "./assets/constants";
 
 function App() {
     const SUM: number = NUMBERS.reduce((a, b) => a + b, 0);
     const AVERAGE = SUM / NUMBERS.length;
 
     const meltedButter: string =
-        INGREDIENTS["melted butter"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["melted butter"][getRandomInt(1, MAX, AVERAGE)];
     const cocoaPowder: string =
-        INGREDIENTS["cocoa powder"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["cocoa powder"][getRandomInt(1, MAX, AVERAGE)];
     const sugar: string =
-        INGREDIENTS["white sugar"][getRandomInt(1, 9, AVERAGE)];
-    const eggs: string = INGREDIENTS["eggs"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["white sugar"][getRandomInt(1, MAX, AVERAGE)];
+    const eggs: string = INGREDIENTS["eggs"][getRandomInt(1, MAX, AVERAGE)];
     const vanilla: string =
-        INGREDIENTS["vanilla extract"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["vanilla extract"][getRandomInt(1, MAX, AVERAGE)];
     const salt: string =
-        INGREDIENTS["iodized salt"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["iodized salt"][getRandomInt(1, MAX, AVERAGE)];
     const flour: string =
-        INGREDIENTS["all purpose flour"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["all purpose flour"][getRandomInt(1, MAX, AVERAGE)];
     const twentyMinutes: string =
-        INGREDIENTS["21 min"][getRandomInt(1, 9, AVERAGE)];
+        INGREDIENTS["21 min"][getRandomInt(1, MAX, AVERAGE)];
 
     const [items, setItems] = useState({
         vanilla: vanilla,

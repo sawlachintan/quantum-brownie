@@ -10,6 +10,8 @@ type ING_TYPE = {
     [index: string]: ALTER_TYPE;
 };
 
+export const MAX: number = 9;
+
 export const INGREDIENTS: ING_TYPE = {
     "melted butter": {
         1: "avocado",
@@ -103,7 +105,7 @@ const QUANT_KEYS: QUANT_TYPE = {
     "0x7": 111, //"0111",
 };
 
-// change this 
+// change this
 const DATA: string[] = [
     "0x2",
     "0x3",
