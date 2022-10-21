@@ -109,7 +109,7 @@ export const Content = () => {
                 >
                     <Stack
                         width={matches ? "100%" : "95vw"}
-                        justifyContent={"center"}
+                        justifyContent={matches ? "center" : "start"}
                         direction="row"
                         spacing={1}
                         overflow="scroll"
