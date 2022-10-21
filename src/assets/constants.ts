@@ -43,7 +43,7 @@ export const INGREDIENTS: ING_TYPE = {
         7: "ketchup",
         8: "Artificial sweetner",
     },
-    eggs: {
+    "eggs": {
         1: "banana",
         2: "soaked chia seeds",
         3: "your favourite yogurt",
