@@ -2,8 +2,13 @@ type QUANT_TYPE = {
     [index: string]: number;
 };
 
+type DIFF_TYPE = {
+    name: string;
+    diff: number;
+};
+
 type ALTER_TYPE = {
-    [index: number]: string;
+    [index: number]: DIFF_TYPE;
 };
 
 type ING_TYPE = {
@@ -14,84 +19,84 @@ export const MAX: number = 9;
 
 export const INGREDIENTS: ING_TYPE = {
     "melted butter": {
-        1: "avocado",
-        2: "mayonnaise",
-        3: "olive oil",
-        4: "vegan butter",
-        5: "Ghee",
-        6: "Lard",
-        7: "Sesame seeds",
-        8: "melted butter",
+        1: { name: "avocado", diff: 2 },
+        2: { name: "mayonnaise", diff: 2 },
+        3: { name: "olive oil", diff: 2 },
+        4: { name: "vegan butter", diff: 2 },
+        5: { name: "Ghee", diff: 2 },
+        6: { name: "Lard", diff: 2 },
+        7: { name: "Sesame seeds", diff: 2 },
+        8: { name: "melted butter", diff: 2 },
     },
     "cocoa powder": {
-        1: "dark chocolate",
-        2: "milk chocolate",
-        3: "dates",
-        4: "matcha powder",
-        5: "coffee",
-        6: "strawberry nesquick",
-        7: "turmeric",
-        8: "potting soil",
+        1: { name: "dark chocolate", diff: 2 },
+        2: { name: "milk chocolate", diff: 2 },
+        3: { name: "dates", diff: 2 },
+        4: { name: "matcha powder", diff: 2 },
+        5: { name: "coffee", diff: 2 },
+        6: { name: "strawberry nesquick", diff: 2 },
+        7: { name: "turmeric", diff: 2 },
+        8: { name: "potting soil", diff: 2 },
     },
     "white sugar": {
-        1: "white sugar",
-        2: "brown sugar",
-        3: "cane sugar",
-        4: "honey",
-        5: "agave",
-        6: "pixie sticks",
-        7: "ketchup",
-        8: "Artificial sweetner",
+        1: { name: "white sugar", diff: 2 },
+        2: { name: "brown sugar", diff: 2 },
+        3: { name: "cane sugar", diff: 2 },
+        4: { name: "honey", diff: 2 },
+        5: { name: "agave", diff: 2 },
+        6: { name: "pixie sticks", diff: 2 },
+        7: { name: "ketchup", diff: 2 },
+        8: { name: "Artificial sweetner", diff: 2 },
     },
-    "eggs": {
-        1: "banana",
-        2: "soaked chia seeds",
-        3: "your favourite yogurt",
-        4: "blocks of tofu",
-        5: "cups of aquafaba",
-        6: "xantham gum",
-        7: "buttermilk",
-        8: "eggs",
+    eggs: {
+        1: { name: "banana", diff: 2 },
+        2: { name: "soaked chia seeds", diff: 2 },
+        3: { name: "your favourite yogurt", diff: 2 },
+        4: { name: "blocks of tofu", diff: 2 },
+        5: { name: "cups of aquafaba", diff: 2 },
+        6: { name: "xantham gum", diff: 2 },
+        7: { name: "buttermilk", diff: 2 },
+        8: { name: "eggs", diff: 2 },
     },
     "vanilla extract": {
-        1: "rose extract",
-        2: "almond extract",
-        3: "maple syrup",
-        4: "liquid smoke",
-        5: "pumpkin spice",
-        6: "hot sauce",
-        7: "matcha tea",
-        8: "vanilla extract",
+        1: { name: "rose extract", diff: 2 },
+        2: { name: "almond extract", diff: 2 },
+        3: { name: "maple syrup", diff: 2 },
+        4: { name: "liquid smoke", diff: 2 },
+        5: { name: "pumpkin spice", diff: 2 },
+        6: { name: "hot sauce", diff: 2 },
+        7: { name: "matcha tea", diff: 2 },
+        8: { name: "vanilla extract", diff: 2 },
     },
     "all purpose flour": {
-        1: "chickpea flour",
-        2: "sorghum",
-        3: "coconut flour",
-        4: "rice flour",
-        5: "mashed potato",
-        6: "almond flour",
-        7: "tapioca flour",
-        8: "all purpose flour",
+        1: { name: "chickpea flour", diff: 2 },
+        2: { name: "sorghum", diff: 2 },
+        3: { name: "coconut flour", diff: 2 },
+        4: { name: "rice flour", diff: 2 },
+        5: { name: "mashed potato", diff: 2 },
+        6: { name: "almond flour", diff: 2 },
+        7: { name: "tapioca flour", diff: 2 },
+        8: { name: "all purpose flour", diff: 2 },
     },
     "iodized salt": {
-        1: "dried garlic",
-        2: "dried ginger",
-        3: "vinegar",
-        4: "black pepper powder",
-        5: "anchovy paste",
-        6: "soy sauce",
-        7: "Bouillon powder",
-        8: "iodized salt",
+        1: { name: "dried garlic", diff: 2 },
+        2: { name: "dried ginger", diff: 2 },
+        3: { name: "vinegar", diff: 2 },
+        4: { name: "black pepper powder", diff: 2 },
+        5: { name: "anchovy paste", diff: 2 },
+        6: { name: "soy sauce", diff: 2 },
+        7: { name: "Bouillon powder", diff: 2 },
+        8: { name: "iodized salt", diff: 2 },
     },
     "21 min": {
-        1: "30 min",
-        2: "45 min",
-        3: "7 years 2 days 3.75 hours 34 sec",
-        4: "9 months",
-        5: "82 min",
-        6: "21 min",
-        7: "2 min 47 sec",
-        8: "100 min",
+        1: { name: "30 min", diff: 2 },
+        2: { name: "45 min", diff: 2 },
+        3: { name: "7 years 2 days 3.75 hours 34 sec", diff: 2 },
+        4: { name: "9 months", diff: 2 },
+        5: { name: "82 min", diff: 2 },
+        6: { name: "21 min", diff: 2 },
+        7: { name: "2 min 47 sec", diff: 2 },
+        8: { name: "100 min", diff: 2 },
     },
 };
 
@@ -1146,3 +1151,14 @@ export const getRandomInt = (
     }
     return value;
 };
+
+export const ChipItems: string[] = [
+    "Brownie",
+    "Cookies",
+    "Ice cream",
+    "Pancakes",
+    "Pasta",
+    "Pizza",
+    "Sandwiches",
+    "Smoothies",
+];
